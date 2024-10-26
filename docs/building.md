@@ -65,7 +65,7 @@ pip3 install --upgrade meson==0.64.1 markdown==3.4.1 markupsafe==2.1.1 jinja2==3
 For Ubuntu 24.04,
 ```
 sudo apt install pipx libgcrypt20-dev libglib2.0-dev libsecret-1-dev
-pipx install meson==0.64.1 markdown==3.4.1 markupsafe==2.1.1 jinja2==3.1.2 pygments==2.13.0 toml==0.10.2 typogrify==2.0.7 tomli==2.0.1
+pip3 install meson==0.64.1 markdown==3.4.1 markupsafe==2.1.1 jinja2==3.1.2 pygments==2.13.0 toml==0.10.2 typogrify==2.0.7 tomli==2.0.1
 ```
 
 Install `libtinfo5` (required by [monero_c](https://github.com/MrCyjaneK/monero_c), should be dropped in the future):

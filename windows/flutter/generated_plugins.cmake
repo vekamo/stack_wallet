@@ -7,6 +7,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   connectivity_plus
   desktop_drop
   flutter_libepiccash
+  flutter_libmwc
   flutter_secure_storage_windows
   isar_flutter_libs
   permission_handler_windows

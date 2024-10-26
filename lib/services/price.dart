@@ -33,6 +33,7 @@ class PriceAPI {
     Dash: "dash",
     Dogecoin: "dogecoin",
     Epiccash: "epic-cash",
+    Mimblewimblecoin: "mimblewimblecoin",
     Ecash: "ecash",
     Ethereum: "ethereum",
     Firo: "zcoin",

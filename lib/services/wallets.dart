@@ -24,6 +24,7 @@ import '../utilities/prefs.dart';
 import '../wallets/crypto_currency/crypto_currency.dart';
 import '../wallets/isar/models/wallet_info.dart';
 import '../wallets/wallet/impl/epiccash_wallet.dart';
+import '../wallets/wallet/impl/mimblewimblecoin_wallet.dart';
 import '../wallets/wallet/wallet.dart';
 import '../wallets/wallet/wallet_mixin_interfaces/cw_based_interface.dart';
 import 'event_bus/events/wallet_added_event.dart';
@@ -104,6 +105,15 @@ class Wallets {
       );
       Logging.instance.log(
         "epic wallet: $walletId deleted with result: $deleteResult",
+        level: LogLevel.Info,
+      );
+    } else if (info.coin is Mimblewimblecoin) {
+      final deleteResult = await deleteMimblewimblecoinWallet(
+        walletId: walletId,
+        secureStore: secureStorage,
+      );
+      Logging.instance.log(
+        "Mimblewimblecoin wallet: $walletId deleted with result: $deleteResult",
         level: LogLevel.Info,
       );
     }
