@@ -22,8 +22,7 @@ abstract class GitStatus {
   static String get firoCommit => firo_versions.getPluginVersion();
   static String get epicCashCommit => epic_versions.getPluginVersion();
   static String get moneroCommit => monero_versions.getPluginVersion();
-  static String get mimblewimblecoinCommit =>
-      mimblewimblecoin_versions.getPluginVersion();
+  static String get mimblewimblecoinCommit => mimblewimblecoin_versions.getPluginVersion();
 
   static String get appCommitHash => AppConfig.commitHash;
 
